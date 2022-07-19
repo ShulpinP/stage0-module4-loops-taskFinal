@@ -2,6 +2,18 @@ package school.mjc.stage0.loops.finalTask;
 
 public class HalfPyramid {
     public void printHalfPyramid(int cathetusLength) {
+        for (int i = 1;i<=cathetusLength;i++) {
+            for (int j = 1; j<=cathetusLength; j++) {
+                if (j+i >= cathetusLength+1) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+                if (j==cathetusLength) {
+                    System.out.println();
+                }
+            }
+        }
 
     }
 
